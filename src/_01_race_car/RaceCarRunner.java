@@ -22,6 +22,13 @@ if(lol.isDamaged()) {
 	lol.pit();
 }
 		// 5. Help the car move into first place.
+lol.getPositionInRace();
+lol.overtake();
+lol.getPositionInRace();
+while(lol.getPositionInRace() > 1)
+{
+	lol.overtake();
+}
 
 	}
 }
